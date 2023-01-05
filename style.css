@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Open+Sans:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,500;0,700;1,300&family=Rubik+80s+Fade&family=Unbounded:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+   html{
+    font-size: 62.5%
+   }
+
+   /* ############## Header styling ######### */
+  .bg-dark{
+    background-color: #263238;
+    color: white;
+    } 
+    .btn{
+    display: inline-block;
+    padding:0.5em  1.5em ;
+    font-weight: 500;
+    text-decoration: uppercase;
+    margin: 0.5em;
+    font-style: italic;
+    
+   }
+   .btn-primary{
+    background-color: antiquewhite;
+    border-style: groove;
+    border-radius: 2.5em;
+    border: 2px solid blue;
+    background-color: antiquewhite;
+   }
+   .btn-secondary{
+    border: 3px solid #e63946;
+    border-radius: 1.5em;
+    border-style: groove;
+    color: blue;
+    
+   }
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p,li{
+    font-size:1.6rem ;
+    margin-bottom:0.5em ;
+}
+   h1,h2,h3{
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+   } 
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin:0 auto;
+}
+
+.text-red{
+    color: #e63946;
+
+}
+
+.text-light{
+    color: antiquewhite;
+}
+.text-black{
+    color: #3333;
+}
+.text-gray{
+    color:#5555 ;
+}
+
+
+
+/* #################### header styling #################### */
+.header{
+    height: 95vh;
+    position:relative ;
+    background-image : url('../img/get of India.jpg');
+    background-position: center;
+    background-size:cover ;
+    }
+
+.navbar a:link,
+.navbar a:visited{
+  color: #e63946;
+}
+.navbar a:hover{
+    border-bottom: 3px solid #222
+}
+
+ .header .navbar a {
+color: black;
+font-size:1rem ;
+text-transform: uppercase;
+
+}
+
+.logo{
+    float: left;
+    font-size: 3rem;
+    
+
+}
+ .navbar .nav-item{
+    display: inline-block;
+    margin: 20px;
+}
+
+.navbar .nav-items{
+    float: right;
+
+}
+.navbar::after{
+    content:'';
+    display:block ;
+    clear: both;
+}
+
+
+
+/* #################### header contect styling ###################### */
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    
+    transform: translate(-50% ,-50%);
+}
+
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #222;
+    color: aliceblue;
+    
+    
+}
+
+.header-content p{
+    text-transform: uppercase;
+    background-color: #222;
+    font-size: medium;
+    color: aliceblue;
+}
+
+/* ##################### show section styling ###################### */
+
+.showcase{
+     background-color: gray;
+    padding: 10rem 0;
+}
+.row{
+    height: 420px;
+    background-color:#ffff ;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row2{
+    margin-bottom: 10rem;
+}
+.row3{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,.row2 .text-box{
+float: left;
+width: 50%;
+}
+
+.row2 .img-box,.row1 .text-box{
+    float: right;
+    width: 50%;
+    }
+    .row3 .img-box,.row4 .text-box{
+        float: left;
+        width: 50%;
+        }
+        .row4 .img-box,.row3 .text-box{
+            float: right;
+            width: 50%;
+        }
+        
+
+    .row .img-box{
+        height: 100%;
+    }
+    .row .text-box{
+        padding: 3rem;
+    }
+
+    .row .img-box img{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .lg-heading{
+        font-size: 50px;
+    }
+    /* ############ Feacture Section ##################  */
+
+    .features{
+        padding: 10rem 0;
+    }
+    .box-wrapper{
+        box-shadow: 0px 0px 20px 0px #222;
+    }
+     
+
+    .box{
+        width: 33.3333333%;
+        float: left;
+        
+        padding:2rem ;
+        text-align: center;
+    }
+
+    .box-1 ,.box-3{
+        background-color: #262626 ;
+        color: white;
+    }
+    .box-2{
+        background: linear-gradient( 111.2deg,  rgba(232,5,5,1) 1.7%, rgba(245,49,191,1) 98.7% ) ;
+        color: white;
+    }
+
+    .box-wrapper::after{
+        content:"" ;
+        display: block;
+        clear:both ;
+    }
+
+    /* ################ Footer Styling ########### */
+
+    .footer{
+        background-color: gray;
+        padding: 2rem;
+        text-align: center;
+        color: white;
+        
+    }
+    .social-media-links img{
+        margin: 2rem;
+        
+    }
+
+    h5{
+        color: rgb(46, 46, 179);
+    }
+/* ################# About page Styling ################### */
+.about{
+    padding: 5rem 0rem;
+}
+
+.about-heading{
+    border-bottom:6px solid #e63946;
+}
+
+.about-heading::after{
+    content: '';
+    display: block;
+    border: 6px solid #e63946;
+    width: 100%;
+}
+
+/* ############ about wrapper styling ############ */
+
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+.about-wrapper .right{
+   float: right;
+   width: 50%;
+}
+
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.about-wrapper li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+ul li{
+    list-style: none;
+
+}
+
+/* ############ count styling ############  */
+   .counts{
+   margin-top:3rem ;
+      }
+
+   .count-item{
+    
+    float: left;
+    width: 25%;
+    float: left;
+    text-align:center;
+    }
+
+    .counts::after{
+    content: '';
+    display: block;
+    clear: both;
+     }
+    .count-item span{
+    font-size: 3rem;
+    font-weight: 7rem;
+    }
+    .count-item p{
+        font-weight:700px ;
+        color: #555;
+        font-size: 1.8rem;
+    }
+    
+/* #######################  Banner Styling ################## */
+
+.cta-banner{
+    background: linear-gradient( 111.2deg,  rgba(232,5,5,1) 1.7%, rgba(245,49,191,1) 98.7% ) ;
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgb(16, 1, 1);
+}
+
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3rem 2.5rem;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+    margin-top: 3rem;
+}
+
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.cta-banner-left{
+    width: 60%;
+    float: left;
+
+}
+
+.cta-banner-right{
+   width: 40%; 
+   float: right;
+   text-align: right;
+
+}
+
+.cta-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ################ Contact form ###############  */
+
+.contact-form{
+    padding: 5rem 0;
+    font-size: 2rem;
+}
+
+.form-wrapper{
+    border: 10px solid red;
+
+}
+
+.form-wrapper{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.company-address{
+    border:4px dotted black ;
+    width: 49%;
+    float: left;
+
+}
+
+.form{
+    border: 4px dotted black;
+    width: 49%;
+    float:right;
+}
+
+/* ############# Form #################  */
+
+
+.fom{
+    text-align: center;
+    border: 10px solid black;
+    background-color: gray;
+    font-size: 20px;
+    width: 100%;
+    padding: 30px;
+    
+    
+    
+}
+#contact-us-btn{
+    height: 35px;
+    width: 150px;
+    background: #fff;
+    } 
+
+    .cont{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 50px;
+        font-weight: 300;
+        padding: 10px;
+        color: white;
+        background-color: #222;
+    }
+    .com{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 50px;
+        font-weight: 300;
+        padding: 10px;
+        background-color: gray;
+        
+    }
+    .Sof{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 30px;
+        font-weight: 300;
+        font: bold;
+        background-color: #222;
+        color: white;
+        
+        padding: 10px;
+    }
+
+.button button{
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: gray;
+    border: none;
+    border-radius: 30px;
+}
+
+
+/* ################### Media queries #####################  */
+
+@media(max-width:500px){
+    html{
+        font-size: 50%;
+    }
+
+    .navbar{
+        text-align: center;
+        float: none;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box,
+    .row .text-box{
+       float: none;
+       width: 100%;
+       text-align: center;
+
+    }
+     .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgba(102 ,102,102,0.521);
+     }
+
+    .features .box-2,
+    .features .box-3{
+        margin-top: 7rem;
+        }
+
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+
+    }
+
+    @media(mid-width:501px)and (max-width:768px){
+       html{
+        font-size: 56.25%;
+
+       }
+       .row .text-box h2{
+        font-size: 2.2rem;;
+        font-weight: 500px;
+       }
+    }
+    @media(orientation: landscape) and (max-height:500px){
+        .header{
+            height: 90vmax;
+        }
+    }
+
+    
+
+
+
+
+
+    
+    
+     
+
+}
